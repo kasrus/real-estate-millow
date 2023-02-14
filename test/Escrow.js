@@ -6,5 +6,14 @@ const tokens = (n) => {
 }
 
 describe('Escrow', () => {
+    let realEstate;
 
+    beforeEach(async()  => {
+        //Deploy the real estate smart contract
+        const RealEstate = await ethers.getContractFactory('Real Estate');
+        realEstate = await RealEstate.deploy();
+    }) 
+    it('saves the addresses', async() => {
+
+    })
 })
